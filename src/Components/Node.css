@@ -4,10 +4,10 @@
   border: 1px solid black;
 }
 
-.node-start {
+.start {
   background-color: green;
 }
 
-.node-end {
+.end {
   background-color: red;
 }
