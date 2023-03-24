@@ -11,3 +11,68 @@
 .end {
   background-color: red;
 }
+
+.wall {
+  background-color: rgb(35, 35, 35);
+}
+
+.final-path {
+  animation-name: finalPathAnimation;
+  animation-duration: 1.5s;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes finalPathAnimation {
+  0% {
+    transform: scale(0.5);
+    background-color: rgb(127, 255, 212);
+  }
+
+  50% {
+    transform: scale(1.15);
+    background-color: rgb(127, 255, 212);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(127, 255, 212);
+  }
+}
+
+.visited {
+  animation-name: visitedAnimation;
+  animation-duration: 1.5s;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.4);
+    background-color: rgba(0, 85, 100, 0.75);
+    border-radius: 10%;
+  }
+
+  50% {
+    background-color: rgb(255, 218, 185);
+  }
+
+  75% {
+    transform: scale(1.15);
+    background-color: rgb(255, 218, 185);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(255, 218, 185);
+  }
+}
