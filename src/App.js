@@ -6,7 +6,6 @@ import "./App.css";
 const App = () => {
   return (
     <div className="App">
-      <h1>Pathfinding Visualiser</h1>
       <Grid></Grid>
     </div>
   );
